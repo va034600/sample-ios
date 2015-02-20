@@ -25,8 +25,28 @@
                                     <action selector="clickByAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w6s-wR-0DK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdB-fv-pSq">
+                                <rect key="frame" x="47" y="58" width="85" height="30"/>
+                                <state key="normal" title="次の画面へ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GnA-u2-c2C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34A-Z8-9HW">
+                                <rect key="frame" x="47" y="108" width="110" height="30"/>
+                                <state key="normal" title="次の画面へ２">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.95913023265990949" green="1" blue="0.075071342188145929" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="34A-Z8-9HW"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="alertButton" destination="CI7-pt-Xdx" id="ySs-0B-XmN"/>
@@ -34,6 +54,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="Qgp-Dq-3Xx">
+            <objects>
+                <viewController storyboardIdentifier="nextView" id="D9V-7y-NNQ" customClass="NextViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O5d-AA-g02"/>
+                        <viewControllerLayoutGuide type="bottom" id="f6t-hM-gPC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CTX-X6-dLC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWw-S0-h14">
+                                <rect key="frame" x="40" y="28" width="95" height="30"/>
+                                <state key="normal" title="前の画面へ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="wZJ-90-Izf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20951563770000001" green="1" blue="0.19441587730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxU-F9-oeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="423"/>
         </scene>
     </scenes>
 </document>
