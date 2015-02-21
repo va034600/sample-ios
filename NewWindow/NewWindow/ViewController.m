@@ -25,15 +25,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)clickByAlertButton:(id)sender {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"アラートタイトル"
-message:@"アラートメッセージ"
-delegate:self
-cancelButtonTitle:nil
-otherButtonTitles:@"OK", nil];
-    [alertView show];
-}
-
 - (IBAction)showNext:(UIButton *)sender {
     NextViewController *nextVc =  [self.storyboard instantiateViewControllerWithIdentifier:@"nextView"];
     [self presentViewController:nextVc animated:YES completion:nil];

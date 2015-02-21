@@ -10,8 +10,5 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *alertButton;
-
-- (IBAction)clickByAlertButton:(id)sender;
 @end
 
