@@ -37,11 +37,19 @@
                                     <action selector="open:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rU6-zP-4a1"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ube-LV-ufn">
+                                <rect key="frame" x="147" y="15" width="123" height="29"/>
+                                <segments>
+                                    <segment title="ペン"/>
+                                    <segment title="消しゴム"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="canvas" destination="4XK-CG-Xen" id="bm1-16-6hR"/>
+                        <outlet property="drawSwitch" destination="Ube-LV-ufn" id="cgd-UM-Sri"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

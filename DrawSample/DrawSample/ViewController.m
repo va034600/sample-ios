@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *canvas;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *drawSwitch;
 
 @end
 
@@ -36,8 +37,15 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     [self.canvas.image drawInRect:self.canvas.bounds];
 
-    //色
-    CGContextSetStrokeColorWithColor(context, [UIColor yellowColor].CGColor);
+    switch(self.drawSwitch.selectedSegmentIndex){
+        case 0:
+            //色
+            CGContextSetStrokeColorWithColor(context, [UIColor yellowColor].CGColor);
+            break;
+        case 1:
+            //消しゴム
+            CGContextSetBlendMode(context, kCGBlendModeClear);
+    }
 
     //from to
     CGContextMoveToPoint(context, fromPoint.x, fromPoint.y);
