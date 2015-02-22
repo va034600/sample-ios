@@ -44,4 +44,18 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)save:(id)sender {
+    UIImage *image = self.imageView.image;
+    NSData *imageData = UIImagePNGRepresentation(image);
+    UIImage *pngimage = [UIImage imageWithData:imageData];
+    UIImageWriteToSavedPhotosAlbum(pngimage, self, @selector(savingImageIsFinished:didFinishSavingWithError:contextInfo:), nil);
+}
+
+
+// 完了を知らせる
+- (void) savingImageIsFinished:(UIImage *)_image didFinishSavingWithError:(NSError *)_error contextInfo:(void *)_contextInfo
+{
+    NSLog(@"保存完了");
+}
+
 @end

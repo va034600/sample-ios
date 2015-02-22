@@ -1,1 +1,3 @@
-# 画像を選択する
+# Picturesの操作
+Picturesにある画像を表示する
+Picturesにある画像を保存する
