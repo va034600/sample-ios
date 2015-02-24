@@ -1,0 +1,19 @@
+//
+//  CocoaLumberjackSample-Prefix.pch
+//  CocoaLumberjackSample
+//
+//  Created by eu on 2015/02/24.
+//  Copyright (c) 2015年 va034600. All rights reserved.
+//
+#import "DDLog.h"
+
+#ifndef CocoaLumberjackSample_CocoaLumberjackSample_Prefix_pch
+#define CocoaLumberjackSample_CocoaLumberjackSample_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+static int const ddLogLevel = LOG_LEVEL_DEBUG;
+

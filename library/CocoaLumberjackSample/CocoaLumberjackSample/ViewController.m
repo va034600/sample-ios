@@ -25,6 +25,7 @@
 }
 - (IBAction)showLog1:(UIButton *)sender {
     NSLog(@"aaa");
+    DDLogInfo(@"aa");
 }
 
 @end
