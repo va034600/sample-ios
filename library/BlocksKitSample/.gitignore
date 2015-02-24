@@ -4,4 +4,7 @@
 !*.xcodeproj/project.pbxproj
 !*.xcworkspace/contents.xcworkspacedata
 
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+
 Pods/*

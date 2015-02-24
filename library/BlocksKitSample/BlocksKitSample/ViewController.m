@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIAlertView+BlocksKit.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)showAlert:(id)sender {
+    [UIAlertView bk_showAlertViewWithTitle:@"タイトル"
+                                   message:@"メッセージ"
+                         cancelButtonTitle:@"キャンセル"
+                         otherButtonTitles:@[@"ログ"]
+                                   handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
+                                       NSLog(@"%d", buttonIndex);
+                                   }];
+
 }
 
 @end
