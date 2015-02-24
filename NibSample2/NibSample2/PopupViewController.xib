@@ -31,7 +31,7 @@
                     <color key="backgroundColor" red="0.20951563770000001" green="1" blue="0.19441587730000001" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+            <color key="backgroundColor" red="0.34094854797979801" green="0.34094854797979801" blue="0.34094854797979801" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
         </view>
     </objects>
 </document>
