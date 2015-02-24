@@ -1,10 +1,14 @@
 PODS:
-  - CocoaLumberjack (1.6)
+  - CocoaLumberjack (1.9.0):
+    - CocoaLumberjack/Extensions (= 1.9.0)
+  - CocoaLumberjack/Core (1.9.0)
+  - CocoaLumberjack/Extensions (1.9.0):
+    - CocoaLumberjack/Core
 
 DEPENDENCIES:
-  - CocoaLumberjack (= 1.6.0)
+  - CocoaLumberjack (= 1.9.0)
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: ad73b4809fe10ea3f47263c8ab3b55e606bb9453
+  CocoaLumberjack: 5766cdd1d0a24bcf15a133c6023747346bf786dd
 
 COCOAPODS: 0.35.0
