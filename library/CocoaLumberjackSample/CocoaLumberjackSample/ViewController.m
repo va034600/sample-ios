@@ -24,8 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)showLog1:(UIButton *)sender {
-    NSLog(@"aaa");
-    DDLogInfo(@"aa");
+    NSLog(@"通常ログ");
+    DDLogDebug(@"デバッグ");
+    DDLogInfo(@"インフォ");
+    DDLogWarn(@"警告");
+    DDLogError(@"エラー");
 }
 
 @end
