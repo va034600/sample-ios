@@ -24,7 +24,7 @@
     self.scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView.showsVerticalScrollIndicator = NO;
     self.scrollView.delegate = self;
-    self.scrollView.minimumZoomScale = 1.0;
+    self.scrollView.minimumZoomScale = 0.5;
     self.scrollView.maximumZoomScale = 4.0;
 }
 
