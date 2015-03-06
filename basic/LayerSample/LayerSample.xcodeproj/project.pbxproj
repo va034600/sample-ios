@@ -14,6 +14,7 @@
 		C0FE6C0B1AA93AB4009F3B2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FE6C0A1AA93AB4009F3B2A /* Images.xcassets */; };
 		C0FE6C0E1AA93AB4009F3B2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FE6C0C1AA93AB4009F3B2A /* LaunchScreen.xib */; };
 		C0FE6C1A1AA93AB4009F3B2A /* LayerSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FE6C191AA93AB4009F3B2A /* LayerSampleTests.m */; };
+		C0FE6C251AA945EE009F3B2A /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FE6C241AA945EE009F3B2A /* TestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		C0FE6C131AA93AB4009F3B2A /* LayerSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayerSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FE6C181AA93AB4009F3B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0FE6C191AA93AB4009F3B2A /* LayerSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerSampleTests.m; sourceTree = "<group>"; };
+		C0FE6C231AA945EE009F3B2A /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		C0FE6C241AA945EE009F3B2A /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				C0FE6C021AA93AB4009F3B2A /* AppDelegate.m */,
 				C0FE6C041AA93AB4009F3B2A /* ViewController.h */,
 				C0FE6C051AA93AB4009F3B2A /* ViewController.m */,
+				C0FE6C231AA945EE009F3B2A /* TestView.h */,
+				C0FE6C241AA945EE009F3B2A /* TestView.m */,
 				C0FE6C071AA93AB4009F3B2A /* Main.storyboard */,
 				C0FE6C0A1AA93AB4009F3B2A /* Images.xcassets */,
 				C0FE6C0C1AA93AB4009F3B2A /* LaunchScreen.xib */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0FE6C251AA945EE009F3B2A /* TestView.m in Sources */,
 				C0FE6C061AA93AB4009F3B2A /* ViewController.m in Sources */,
 				C0FE6C031AA93AB4009F3B2A /* AppDelegate.m in Sources */,
 				C0FE6C001AA93AB4009F3B2A /* main.m in Sources */,
