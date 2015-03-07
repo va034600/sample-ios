@@ -39,14 +39,16 @@
     sublayer2.frame = CGRectMake(100, 30, 128, 192);
     [self.view.layer addSublayer:sublayer2];
     
-    TestView *testView =
-    [[TestView alloc] initWithFrame:
-     CGRectMake(20.f,20.f,300.f,300.f)];
-
+    TestView *testView = [[TestView alloc] initWithFrame:CGRectMake(20.f,20.f,300.f,300.f)];
     //背景透過
     testView.opaque = NO;
     testView.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.0f];
     [self.view addSubview:testView];
+    
+    TestView *test2View = [[TestView alloc] initWithFrame:CGRectMake(100.f,20.f,300.f,300.f)];
+    test2View.opaque = NO;
+    test2View.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.0f];
+    [self.view addSubview:test2View];
 }
 
 - (void)didReceiveMemoryWarning {
