@@ -7,11 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "LayerImageView.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet LayerImageView *canvas;
-@property (weak, nonatomic) IBOutlet LayerImageView *canvas2;
+@property (weak, nonatomic) IBOutlet UIImageView *canvas;
+@property (weak, nonatomic) IBOutlet UIImageView *canvas2;
 
 @end
 
@@ -35,7 +34,7 @@ int mode = 1;
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    LayerImageView *target;
+    UIImageView *target;
     if(mode == 1){
         target = self.canvas;
     }else{
@@ -67,12 +66,12 @@ int mode = 1;
 
 - (IBAction)layer1Pressed:(id)sender {
     mode = 1;
-    [self.view exchangeSubviewAtIndex:1 withSubviewAtIndex:0];
+    [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
 }
 
 - (IBAction)layer2Pressed:(id)sender {
     mode = 2;
-    [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
+    [self.view exchangeSubviewAtIndex:1 withSubviewAtIndex:0];
 }
 
 @end
