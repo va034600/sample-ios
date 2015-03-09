@@ -13,7 +13,7 @@
 		C0FE6CEA1AAD6DB4009F3B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FE6CE81AAD6DB4009F3B2A /* Main.storyboard */; };
 		C0FE6CEC1AAD6DB4009F3B2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FE6CEB1AAD6DB4009F3B2A /* Images.xcassets */; };
 		C0FE6CEF1AAD6DB4009F3B2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FE6CED1AAD6DB4009F3B2A /* LaunchScreen.xib */; };
-		C0FE6CFB1AAD6DB4009F3B2A /* KeyValueObservingExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FE6CFA1AAD6DB4009F3B2A /* KeyValueObservingExampleTests.m */; };
+		C0FE6CFB1AAD6DB4009F3B2A /* KeyValueObservingSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FE6CFA1AAD6DB4009F3B2A /* KeyValueObservingSampleTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,12 +22,12 @@
 			containerPortal = C0FE6CD31AAD6DB4009F3B2A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C0FE6CDA1AAD6DB4009F3B2A;
-			remoteInfo = KeyValueObservingExample;
+			remoteInfo = KeyValueObservingSample;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C0FE6CDB1AAD6DB4009F3B2A /* KeyValueObservingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyValueObservingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0FE6CDB1AAD6DB4009F3B2A /* KeyValueObservingSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyValueObservingSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FE6CDF1AAD6DB4009F3B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0FE6CE01AAD6DB4009F3B2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0FE6CE21AAD6DB4009F3B2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,9 +37,9 @@
 		C0FE6CE91AAD6DB4009F3B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0FE6CEB1AAD6DB4009F3B2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C0FE6CEE1AAD6DB4009F3B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C0FE6CF41AAD6DB4009F3B2A /* KeyValueObservingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyValueObservingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0FE6CF41AAD6DB4009F3B2A /* KeyValueObservingSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyValueObservingSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FE6CF91AAD6DB4009F3B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0FE6CFA1AAD6DB4009F3B2A /* KeyValueObservingExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyValueObservingExampleTests.m; sourceTree = "<group>"; };
+		C0FE6CFA1AAD6DB4009F3B2A /* KeyValueObservingSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyValueObservingSampleTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,8 @@
 		C0FE6CD21AAD6DB4009F3B2A = {
 			isa = PBXGroup;
 			children = (
-				C0FE6CDD1AAD6DB4009F3B2A /* KeyValueObservingExample */,
-				C0FE6CF71AAD6DB4009F3B2A /* KeyValueObservingExampleTests */,
+				C0FE6CDD1AAD6DB4009F3B2A /* KeyValueObservingSample */,
+				C0FE6CF71AAD6DB4009F3B2A /* KeyValueObservingSampleTests */,
 				C0FE6CDC1AAD6DB4009F3B2A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,13 +72,13 @@
 		C0FE6CDC1AAD6DB4009F3B2A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0FE6CDB1AAD6DB4009F3B2A /* KeyValueObservingExample.app */,
-				C0FE6CF41AAD6DB4009F3B2A /* KeyValueObservingExampleTests.xctest */,
+				C0FE6CDB1AAD6DB4009F3B2A /* KeyValueObservingSample.app */,
+				C0FE6CF41AAD6DB4009F3B2A /* KeyValueObservingSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C0FE6CDD1AAD6DB4009F3B2A /* KeyValueObservingExample */ = {
+		C0FE6CDD1AAD6DB4009F3B2A /* KeyValueObservingSample */ = {
 			isa = PBXGroup;
 			children = (
 				C0FE6CE21AAD6DB4009F3B2A /* AppDelegate.h */,
@@ -90,7 +90,8 @@
 				C0FE6CED1AAD6DB4009F3B2A /* LaunchScreen.xib */,
 				C0FE6CDE1AAD6DB4009F3B2A /* Supporting Files */,
 			);
-			path = KeyValueObservingExample;
+			name = KeyValueObservingSample;
+			path = KeyValueObservingSample;
 			sourceTree = "<group>";
 		};
 		C0FE6CDE1AAD6DB4009F3B2A /* Supporting Files */ = {
@@ -102,13 +103,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C0FE6CF71AAD6DB4009F3B2A /* KeyValueObservingExampleTests */ = {
+		C0FE6CF71AAD6DB4009F3B2A /* KeyValueObservingSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				C0FE6CFA1AAD6DB4009F3B2A /* KeyValueObservingExampleTests.m */,
+				C0FE6CFA1AAD6DB4009F3B2A /* KeyValueObservingSampleTests.m */,
 				C0FE6CF81AAD6DB4009F3B2A /* Supporting Files */,
 			);
-			path = KeyValueObservingExampleTests;
+			name = KeyValueObservingSampleTests;
+			path = KeyValueObservingSampleTests;
 			sourceTree = "<group>";
 		};
 		C0FE6CF81AAD6DB4009F3B2A /* Supporting Files */ = {
@@ -122,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C0FE6CDA1AAD6DB4009F3B2A /* KeyValueObservingExample */ = {
+		C0FE6CDA1AAD6DB4009F3B2A /* KeyValueObservingSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0FE6CFE1AAD6DB4009F3B2A /* Build configuration list for PBXNativeTarget "KeyValueObservingExample" */;
+			buildConfigurationList = C0FE6CFE1AAD6DB4009F3B2A /* Build configuration list for PBXNativeTarget "KeyValueObservingSample" */;
 			buildPhases = (
 				C0FE6CD71AAD6DB4009F3B2A /* Sources */,
 				C0FE6CD81AAD6DB4009F3B2A /* Frameworks */,
@@ -134,14 +136,14 @@
 			);
 			dependencies = (
 			);
-			name = KeyValueObservingExample;
-			productName = KeyValueObservingExample;
-			productReference = C0FE6CDB1AAD6DB4009F3B2A /* KeyValueObservingExample.app */;
+			name = KeyValueObservingSample;
+			productName = KeyValueObservingSample;
+			productReference = C0FE6CDB1AAD6DB4009F3B2A /* KeyValueObservingSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C0FE6CF31AAD6DB4009F3B2A /* KeyValueObservingExampleTests */ = {
+		C0FE6CF31AAD6DB4009F3B2A /* KeyValueObservingSampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0FE6D011AAD6DB4009F3B2A /* Build configuration list for PBXNativeTarget "KeyValueObservingExampleTests" */;
+			buildConfigurationList = C0FE6D011AAD6DB4009F3B2A /* Build configuration list for PBXNativeTarget "KeyValueObservingSampleTests" */;
 			buildPhases = (
 				C0FE6CF01AAD6DB4009F3B2A /* Sources */,
 				C0FE6CF11AAD6DB4009F3B2A /* Frameworks */,
@@ -152,9 +154,9 @@
 			dependencies = (
 				C0FE6CF61AAD6DB4009F3B2A /* PBXTargetDependency */,
 			);
-			name = KeyValueObservingExampleTests;
-			productName = KeyValueObservingExampleTests;
-			productReference = C0FE6CF41AAD6DB4009F3B2A /* KeyValueObservingExampleTests.xctest */;
+			name = KeyValueObservingSampleTests;
+			productName = KeyValueObservingSampleTests;
+			productReference = C0FE6CF41AAD6DB4009F3B2A /* KeyValueObservingSampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C0FE6CD61AAD6DB4009F3B2A /* Build configuration list for PBXProject "KeyValueObservingExample" */;
+			buildConfigurationList = C0FE6CD61AAD6DB4009F3B2A /* Build configuration list for PBXProject "KeyValueObservingSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,8 +190,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0FE6CDA1AAD6DB4009F3B2A /* KeyValueObservingExample */,
-				C0FE6CF31AAD6DB4009F3B2A /* KeyValueObservingExampleTests */,
+				C0FE6CDA1AAD6DB4009F3B2A /* KeyValueObservingSample */,
+				C0FE6CF31AAD6DB4009F3B2A /* KeyValueObservingSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0FE6CFB1AAD6DB4009F3B2A /* KeyValueObservingExampleTests.m in Sources */,
+				C0FE6CFB1AAD6DB4009F3B2A /* KeyValueObservingSampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +240,7 @@
 /* Begin PBXTargetDependency section */
 		C0FE6CF61AAD6DB4009F3B2A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C0FE6CDA1AAD6DB4009F3B2A /* KeyValueObservingExample */;
+			target = C0FE6CDA1AAD6DB4009F3B2A /* KeyValueObservingSample */;
 			targetProxy = C0FE6CF51AAD6DB4009F3B2A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,9 +347,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = KeyValueObservingExample/Info.plist;
+				INFOPLIST_FILE = KeyValueObservingSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KeyValueObservingSample;
 			};
 			name = Debug;
 		};
@@ -355,9 +357,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = KeyValueObservingExample/Info.plist;
+				INFOPLIST_FILE = KeyValueObservingSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KeyValueObservingSample;
 			};
 			name = Release;
 		};
@@ -373,10 +375,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = KeyValueObservingExampleTests/Info.plist;
+				INFOPLIST_FILE = KeyValueObservingSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyValueObservingExample.app/KeyValueObservingExample";
+				PRODUCT_NAME = KeyValueObservingSampleTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyValueObservingSample.app/KeyValueObservingSample";
 			};
 			name = Debug;
 		};
@@ -388,17 +390,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = KeyValueObservingExampleTests/Info.plist;
+				INFOPLIST_FILE = KeyValueObservingSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyValueObservingExample.app/KeyValueObservingExample";
+				PRODUCT_NAME = KeyValueObservingSampleTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyValueObservingSample.app/KeyValueObservingSample";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C0FE6CD61AAD6DB4009F3B2A /* Build configuration list for PBXProject "KeyValueObservingExample" */ = {
+		C0FE6CD61AAD6DB4009F3B2A /* Build configuration list for PBXProject "KeyValueObservingSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0FE6CFC1AAD6DB4009F3B2A /* Debug */,
@@ -407,21 +409,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0FE6CFE1AAD6DB4009F3B2A /* Build configuration list for PBXNativeTarget "KeyValueObservingExample" */ = {
+		C0FE6CFE1AAD6DB4009F3B2A /* Build configuration list for PBXNativeTarget "KeyValueObservingSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0FE6CFF1AAD6DB4009F3B2A /* Debug */,
 				C0FE6D001AAD6DB4009F3B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		C0FE6D011AAD6DB4009F3B2A /* Build configuration list for PBXNativeTarget "KeyValueObservingExampleTests" */ = {
+		C0FE6D011AAD6DB4009F3B2A /* Build configuration list for PBXNativeTarget "KeyValueObservingSampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0FE6D021AAD6DB4009F3B2A /* Debug */,
 				C0FE6D031AAD6DB4009F3B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

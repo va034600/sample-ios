@@ -1,6 +1,6 @@
 //
-//  KeyValueObservingExampleTests.m
-//  KeyValueObservingExampleTests
+//  KeyValueObservingSampleTests.m
+//  KeyValueObservingSampleTests
 //
 //  Created by eu on 2015/03/09.
 //  Copyright (c) 2015年 va034600. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface KeyValueObservingExampleTests : XCTestCase
+@interface KeyValueObservingSampleTests : XCTestCase
 
 @end
 
-@implementation KeyValueObservingExampleTests
+@implementation KeyValueObservingSampleTests
 
 - (void)setUp {
     [super setUp];
@@ -25,13 +25,13 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
+- (void)testSample {
+    // This is an Sample of a functional test case.
     XCTAssert(YES, @"Pass");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
+- (void)testPerformanceSample {
+    // This is an Sample of a performance test case.
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
