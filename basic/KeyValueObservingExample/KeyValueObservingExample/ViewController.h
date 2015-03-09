@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController
 
-@property(nonatomic,assign) NSUInteger value;
+@property(nonatomic,assign) NSUInteger value2;
 
 @end
 
