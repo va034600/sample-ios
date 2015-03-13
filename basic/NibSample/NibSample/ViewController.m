@@ -25,10 +25,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)open:(id)sender {
-    NextUIView *_customView = [[NextUIView alloc] init];
-    _customView.frame = CGRectMake(30,214,260,140);
-    [self.view addSubview:_customView];
-
+    NextUIView *uiView = [[NextUIView alloc] initWithFrame:CGRectMake(30,250,150,100)];
+    [self.view addSubview:uiView];
 }
 
 @end
