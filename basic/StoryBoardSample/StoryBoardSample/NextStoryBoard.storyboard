@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="fdq-Iv-0Ld">
             <objects>
-                <viewController id="rut-9N-ngb" sceneMemberID="viewController">
+                <viewController id="rut-9N-ngb" customClass="NextViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Osd-vF-yR8"/>
                         <viewControllerLayoutGuide type="bottom" id="bnH-ou-yxP"/>
@@ -22,6 +22,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pC-hE-ajM">
+                                <rect key="frame" x="16" y="49" width="46" height="30"/>
+                                <state key="normal" title="閉じる">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="rut-9N-ngb" eventType="touchUpInside" id="PBU-Dc-ZjP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

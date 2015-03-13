@@ -15,6 +15,7 @@
 		C0A4C0561AB27DCB00D6439E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0A4C0541AB27DCB00D6439E /* LaunchScreen.xib */; };
 		C0A4C0621AB27DCB00D6439E /* StoryBoardSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4C0611AB27DCB00D6439E /* StoryBoardSampleTests.m */; };
 		C0A4C06C1AB27DE100D6439E /* NextStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A4C06B1AB27DE100D6439E /* NextStoryBoard.storyboard */; };
+		C0A4C0741AB2891500D6439E /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4C0731AB2891500D6439E /* NextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		C0A4C0601AB27DCB00D6439E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A4C0611AB27DCB00D6439E /* StoryBoardSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryBoardSampleTests.m; sourceTree = "<group>"; };
 		C0A4C06B1AB27DE100D6439E /* NextStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NextStoryBoard.storyboard; sourceTree = "<group>"; };
+		C0A4C0721AB2891500D6439E /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		C0A4C0731AB2891500D6439E /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				C0A4C0541AB27DCB00D6439E /* LaunchScreen.xib */,
 				C0A4C0451AB27DCB00D6439E /* Supporting Files */,
 				C0A4C06B1AB27DE100D6439E /* NextStoryBoard.storyboard */,
+				C0A4C0721AB2891500D6439E /* NextViewController.h */,
+				C0A4C0731AB2891500D6439E /* NextViewController.m */,
 			);
 			path = StoryBoardSample;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A4C04E1AB27DCB00D6439E /* ViewController.m in Sources */,
+				C0A4C0741AB2891500D6439E /* NextViewController.m in Sources */,
 				C0A4C04B1AB27DCB00D6439E /* AppDelegate.m in Sources */,
 				C0A4C0481AB27DCB00D6439E /* main.m in Sources */,
 			);
@@ -418,6 +424,7 @@
 				C0A4C0671AB27DCB00D6439E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0A4C0681AB27DCB00D6439E /* Build configuration list for PBXNativeTarget "StoryBoardSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				C0A4C06A1AB27DCB00D6439E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
