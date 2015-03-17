@@ -35,4 +35,10 @@
     NSLog(@"aaa");
 }
 
+- (void)dealloc {
+    //オブサーバ削除
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    [notificationCenter removeObserver:self forKeyPath:@"teams"];
+}
+
 @end

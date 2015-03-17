@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface SampleModel : NSObject
-@property(nonatomic,assign) NSUInteger value2;
+@property(nonatomic,assign) NSInteger value2;
 @end

@@ -32,4 +32,9 @@
 {
     NSLog(@"%d", self.value2);
 }
+
+- (void)dealloc {
+    //オブサーバ削除
+    [self removeObserver:self forKeyPath:@"value2"];
+}
 @end
