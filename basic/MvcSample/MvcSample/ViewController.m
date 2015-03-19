@@ -37,13 +37,18 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
+    if (![NSThread isMainThread]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+        });
+        
+        return;
+    }
+
     NSLog(@"observeValueForKeyPath start");
     if ([TestModel isObservedTarget:object])
     {
-        NSOperationQueue* queue = [NSOperationQueue mainQueue];
-        [queue addOperationWithBlock:^{
-            self.statusLabel.text = [NSString stringWithFormat:@"%ld", [TestModel getResponseStatus]];
-        }];
+        self.statusLabel.text = [NSString stringWithFormat:@"%ld", [TestModel getResponseStatus]];
     }
     NSLog(@"observeValueForKeyPath end");
 }
