@@ -45,6 +45,10 @@
         return;
     }
 
+    //TODO こっち？
+//    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//    }];
+    
     NSLog(@"observeValueForKeyPath start");
     if ([TestModel isObservedTarget:object])
     {
