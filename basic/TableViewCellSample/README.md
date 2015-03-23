@@ -1,0 +1,4 @@
+# 独自のTableViewCellを使って、TableViewControllerを表示する。
+
+ポイントは xibファイルはemptyで新規作成し、UITableViewCellを追加して作成する。
+View でxibファイルを作成してしまうと、ベースがUIViewになってしまい、実行時エラーになる。
