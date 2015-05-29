@@ -24,8 +24,7 @@
     if (self) {
         UINib *nib = [UINib nibWithNibName:@"NextView" bundle:[NSBundle mainBundle]];
         NSArray *array = [nib instantiateWithOwner:self options:nil];
-        UIView *targetView = [array objectAtIndex:0];
-        [self addSubview:targetView];
+        self = [array objectAtIndex:0];
         
     }
     return self;
