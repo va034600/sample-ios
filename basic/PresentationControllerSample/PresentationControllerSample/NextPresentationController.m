@@ -8,7 +8,18 @@
 - (void)presentationTransitionWillBegin {
     UIView *vi = [[UIView alloc] initWithFrame:self.containerView.bounds];
     vi.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
+    
+    // タップイベント検知追加
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeTapped:)];
+    [vi addGestureRecognizer:gestureRecognizer];
+
     [self.containerView addSubview:vi];
+}
+
+
+- (void)closeTapped:(id)sender
+{
+    [self.containerView removeFromSuperview];
 }
 
 - (CGRect)frameOfPresentedViewInContainerView {
