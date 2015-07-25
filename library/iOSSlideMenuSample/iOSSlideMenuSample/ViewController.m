@@ -30,10 +30,10 @@
     return YES;
 }
 
-- (BOOL)slideNavigationControllerShouldDisplayRightMenu
-{
-    return YES;
-}
+//- (BOOL)slideNavigationControllerShouldDisplayRightMenu
+//{
+//    return NO;
+//}
 
 - (IBAction)showButtonTouchUpInside:(id)sender {
     NSLog(@"aa");
