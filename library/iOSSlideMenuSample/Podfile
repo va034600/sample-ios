@@ -1,0 +1,2 @@
+platform :ios, "7.0"
+pod 'iOS-Slide-Menu', '1.4.6'
