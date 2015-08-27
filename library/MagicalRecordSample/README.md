@@ -1,0 +1,1 @@
+# Magical Record Sample
