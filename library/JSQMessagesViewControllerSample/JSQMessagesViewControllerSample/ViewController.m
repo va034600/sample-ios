@@ -9,7 +9,10 @@
 #import "ViewController.h"
 #import "DemoModelData.h"
 
-@interface ViewController ()
+@interface ViewController () <
+UIActionSheetDelegate,
+JSQMessagesComposerTextViewPasteDelegate
+>
 @property (strong, nonatomic) DemoModelData *demoData;
 @end
 
@@ -34,14 +37,18 @@
     [super viewDidAppear:animated];
 }
 
+#pragma mark - JSQMessagesComposerTextViewPasteDelegate
+
+- (BOOL)composerTextView:(JSQMessagesComposerTextView *)textView shouldPasteWithSender:(id)sender
+{
+    return YES;
+}
+
 #pragma mark - JSQMessagesViewController
 
 #pragma mark - JSQMessages
 
 #pragma mark - JSQMessages CollectionView DataSource
-
-#pragma mark - JSQMessagesComposerTextViewPasteDelegate methods
-
 
 - (id<JSQMessageData>)collectionView:(JSQMessagesCollectionView *)collectionView messageDataForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -98,8 +105,6 @@
     return nil;
 }
 
-#pragma mark - UICollectionView DataSource
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return [self.demoData.messages count];
@@ -125,11 +130,6 @@
     }
     
     return cell;
-}
-
-- (BOOL)composerTextView:(JSQMessagesComposerTextView *)textView shouldPasteWithSender:(id)sender
-{
-    return YES;
 }
 
 @end
