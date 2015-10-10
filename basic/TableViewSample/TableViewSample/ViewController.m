@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController (){
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>{
     NSArray *array;
 }
 @property (weak, nonatomic) IBOutlet UITableView *abcTableView;
@@ -19,10 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
     self.abcTableView.dataSource = self;
+    self.abcTableView.delegate = self;
 
     array = [[NSArray alloc] initWithObjects:@"aaa", @"bbb", @"ccc", nil];
+
     [self.abcTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     [self.abcTableView reloadData];
 }
