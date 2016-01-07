@@ -1,0 +1,10 @@
+PODS:
+  - HPGrowingTextView (1.1)
+
+DEPENDENCIES:
+  - HPGrowingTextView (= 1.1)
+
+SPEC CHECKSUMS:
+  HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
+
+COCOAPODS: 0.39.0
