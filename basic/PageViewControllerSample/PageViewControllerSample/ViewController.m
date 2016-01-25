@@ -12,8 +12,6 @@
 
 @interface ViewController ()<UIPageViewControllerDataSource>
 
-@property (strong, nonatomic) UIPageViewController *pageController;
-
 @end
 
 @implementation ViewController
@@ -24,20 +22,15 @@
     
     self.view.backgroundColor = [UIColor redColor];
     
-    self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    
-    self.pageController.dataSource = self;
-    [[self.pageController view] setFrame:[[self view] bounds]];
+    self.dataSource = self;
     
     ChildViewController *initialViewController = [self viewControllerAtIndex:0];
     
     NSArray *viewControllers = [NSArray arrayWithObject:initialViewController];
     
-    [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    [self setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
-    [self addChildViewController:self.pageController];
-    [[self view] addSubview:[self.pageController view]];
-    [self.pageController didMoveToParentViewController:self];
+    [self didMoveToParentViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
